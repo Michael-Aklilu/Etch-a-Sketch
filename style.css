@@ -2,12 +2,13 @@
     display: flex;
     flex-wrap: wrap;
     height: 800px;
-    width: 1600px;
-    
+    width: 956px;
+    align-content: center;
+    margin-left: 350px;
 }
 
 div{
-    
     height: 30px;
-    width: 60px;
+    width: 53px;
+    border-style: solid;
 }
