@@ -1,16 +1,13 @@
 const container = document.querySelector("#container");
 
-const firstBox = document.createElement("div");
-container.appendChild(first.Box);
+const row = 16;
+const column = 16;
 
-const secondBox = document.createElement("div");
-container.appendChild(secondBox);
+for(let i = 0; i<row;i++){
+    for(let j = 0; j<column; j++)
+    {
+        const gridItem = document.createElement("div");
+        container.appendChild(gridItem);
+    }
+}
 
-const thirdBox = document.createElement("div");
-container.appendChild(thirdBox);
-
-const fourthBox = document.createElement("div");
-container.appendChild(fourthBox);
-
-const fifthBox = document.createElement("div");
-container.appendChild(fifthBox);
