@@ -33,7 +33,7 @@ grid.forEach(el => el.addEventListener('mouseenter',(event) => {
 createBook();
 
 const but = document.querySelector("button");
-but.addEventListener('click', (event) =>{
+but.addEventListener('click', () =>{
     let newGrid = prompt('Select the number of squares per side');
     if(newGrid > 100)
        alert("A maximum of 100 is allowed");
