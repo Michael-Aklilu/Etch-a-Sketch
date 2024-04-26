@@ -1,14 +1,25 @@
 #container{
     display: flex;
     flex-wrap: wrap;
-    height: 800px;
+    flex-direction: column;
+    height: fit-content;
     width: 956px;
     align-content: center;
-    margin-left: 350px;
+    margin-left: 475px;
+    border: 1px solid black;
 }
 
 div{
+    display: flex;
+    width: inherit;
     height: 30px;
-    width: 53px;
-    border-style: solid;
+    box-sizing: border-box;
+    border: 1px solid black;
 }
+h1{
+    display: flex;
+    justify-content: center;
+    height:50px;
+}
+
+
