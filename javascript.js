@@ -1,7 +1,7 @@
 const container = document.querySelector("#container");
 let size = 16;
 
-function createBook(){
+function createBoxes(){
     container.innerHTML = ""; 
        
 for(let i = 0; i<size;i++){
