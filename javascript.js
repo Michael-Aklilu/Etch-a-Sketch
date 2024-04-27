@@ -1,11 +1,10 @@
 const container = document.querySelector("#container");
-let row = 16;
-let column = 16;
+let size = 16;
 
 function createBook(){
     container.innerHTML = ""; 
        
-for(let i = 0; i<row;i++){
+for(let i = 0; i<size;i++){
     
     let gridItem = document.createElement("div");
     gridItem.classList.add("row");
@@ -13,7 +12,7 @@ for(let i = 0; i<row;i++){
     
 
 
-    for(let j = 0; j<column; j++)
+    for(let j = 0; j<size; j++)
     {
        
         let vertical = document.createElement("div");
@@ -26,11 +25,11 @@ for(let i = 0; i<row;i++){
 let grid = document.querySelectorAll('.box');
 grid.forEach(el => el.addEventListener('mouseenter',(event) => {
      
-    event.target.setAttribute("style", "background: red;")
+    event.target.setAttribute("style", "background: black;")
 }));
 };
 
-createBook();
+createBoxes();
 
 const but = document.querySelector("button");
 but.addEventListener('click', () =>{
@@ -38,9 +37,7 @@ but.addEventListener('click', () =>{
     if(newGrid > 100)
        alert("A maximum of 100 is allowed");
     else{
-         row = Number(newGrid);
-         column = Number(newGrid);
-         console.log(row);
-         createBook();
+         size = Number(newGrid);
+         createBoxes();
     }    
 })
